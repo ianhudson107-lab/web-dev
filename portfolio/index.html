@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A front-end portfolio featuring projects built with HTML, CSS, and JavaScript.">
+  <title>Ian Hudson | Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="#home" aria-label="Back to top">IH<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+  </header>
+
+  <main id="home">
+    <section class="hero page-width">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> FRONT-END PROJECTS</p>
+        <h1>Hi, I’m <span class="accent">Ian Hudson.</span><br> I make things for the web.</h1>
+        <p class="intro">I’m a Bachelor of Information Technology student at KYU, building practical front-end projects and bringing experience managing training for various AI models.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="code-card">
+          <div class="code-dots"><i></i><i></i><i></i></div>
+          <p><span class="code-purple">const</span> portfolio = {</p>
+          <p class="code-indent">curiosity: <span class="code-green">true</span>,</p>
+          <p class="code-indent">building: <span class="code-green">"for the web"</span></p>
+          <p>};</p>
+          <div class="cursor-line"><span></span></div>
+        </div>
+        <div class="spark spark-one">✳</div>
+        <div class="spark spark-two">✦</div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section page-width section-block">
+      <div class="section-heading">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <h2>Learning by <span class="accent">building.</span></h2>
+      </div>
+      <div class="about-content">
+        <p>I’m currently studying for a Bachelor of Information Technology at KYU. I’m exploring web development through hands-on projects, shaping clear interfaces, and making them work across screen sizes.</p>
+        <p>I’ve also managed training for various AI models. I’m interested in how thoughtful technology and useful design can work together.</p>
+        <div class="tool-list" aria-label="Tools used in my current project">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="work-section section-block">
+      <div class="page-width">
+        <div class="section-heading work-heading">
+          <div><p class="eyebrow">SELECTED WORK</p><h2>Things I’ve <span class="accent">made.</span></h2></div>
+          <p class="section-note">A growing collection of front-end experiments and projects.</p>
+        </div>
+        <article class="project-card">
+          <div class="project-visual" aria-hidden="true">
+            <div class="mini-browser">
+              <div class="mini-browser-bar"><i></i><i></i><i></i><span></span></div>
+              <div class="mini-content">
+                <div class="mini-title"></div><div class="mini-subtitle"></div>
+                <div class="mini-fields"><b></b><b></b><b></b><b></b></div>
+                <div class="mini-submit"></div>
+              </div>
+            </div>
+            <span class="visual-tag">01 / WEB APP</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>HTML · CSS · JavaScript</span><span>2026</span></div>
+            <h3>Member Registration</h3>
+            <p>A responsive registration interface for a WebDev club, with a custom light and dark theme switch that remembers the visitor’s choice.</p>
+            <a class="text-link" href="../index.html">View the project <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section page-width section-block">
+      <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
+      <h2>Let’s make something <span class="accent">useful.</span></h2>
+      <p class="contact-copy">Add your email or social link here so people can reach you.</p>
+      <a class="button button-primary" href="mailto:hudsonian107@gmail.com">hudsonian107@gmail.com <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="footer page-width">
+    <span>© <span id="year"></span> Ian Hudson</span>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
